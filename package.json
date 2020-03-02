@@ -1,0 +1,19 @@
+{
+  "name": "pixel-legend",
+  "version": "1.0.0",
+  "description": "auth system",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bigorange8801/pixel-legend.git"
+  },
+  "author": "John Donaldson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bigorange8801/pixel-legend/issues"
+  },
+  "homepage": "https://github.com/Bigorange8801/pixel-legend#readme"
+}
