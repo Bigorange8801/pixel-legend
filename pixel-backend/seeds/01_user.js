@@ -1,13 +1,19 @@
-
-exports.seed = function(knex) {
+require('dotenv').config();
+const bcrypt = require('bcryptjs');
+const {testUser} = process.env;
+exports.seed = function(knex,Promise) {
   // Deletes ALL existing entries
+
   return knex('table_name').del()
     .then(function () {
       // Inserts seed entries
-      return knex('table_name').insert([
-        {id: 1, colName: 'rowValue1'},
-        {id: 2, colName: 'rowValue2'},
-        {id: 3, colName: 'rowValue3'}
+      return knex('user').insert([
+        {
+          firstName: 'Jane',
+          lastName: 'Doe',
+          userName: 'Gamer Tag',
+          password: bcrypt.hashSync('{testUser}', 255)
+        }
       ]);
     });
 };
